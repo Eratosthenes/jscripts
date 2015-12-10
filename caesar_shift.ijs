@@ -6,17 +6,9 @@ NB. echo and exit are valid J commands, not bash
 data =. 'hello cruel world'
 shift =. 2
 
-NB. convert data to ascii
-ascii =. a. i. data
-
-NB. find indices of spaces
-space_idx =. I. 32 = ascii
-
-NB. shift the data
-shifted_ascii =. shift + ascii
-
-NB. replace the spaces and convert back to letters
-result =. u: 32 (space_idx)} shifted_ascii
+ascii =. a. i. data NB. convert data to ascii
+space_idx =. I. 32 = ascii NB. find indices of spaces
+result =. u: 32 (space_idx)} shift + ascii NB. shift data, replace the spaces and convert back to letters
 
 echo data
 echo result

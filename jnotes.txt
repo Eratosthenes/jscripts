@@ -1,0 +1,7 @@
+12/9:
+* how to remove an arbitrary element from an array?
+  - use the # operator with a binary string on the LHS
+  - eg, to remove the element at index 1 from array a:
+    a #~ -.1=i.#a
+* dyadic verb invocation always used when possible    
+* kona - open source version of k... 
