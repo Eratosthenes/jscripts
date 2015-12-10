@@ -5,3 +5,10 @@
     a #~ -.1=i.#a
 * dyadic verb invocation always used when possible    
 * kona - open source version of k... 
+
+12/10:
+* simple function for reversing a number: rev =.|.&.":
+  - converts it to string, reverses, then converts it back to a number 
+  - the ". is implied by the obverse
+* simple function for checking a palindromic number: is_pal=.-: |.&.":
+
